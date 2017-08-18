@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab work</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="jquery-3.2.1.min.js"></script>
+<script>
+ $(document).ready(function(){
+    $("#button").click(function(){
+         $(".plus").remove();
+        document.getElementById("overlay").style.display = "block";
+    });
+});
+
+</script>
+<style type="text/css">
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+</style>
+<!-- <script type="text/javascript">
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+</script>
+ -->
+<link href="tab.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+  	<div class="header">
+  	<h1 class="text-center toptext">TABLE83</h1>
+  	</div>
+  	  <!--The grids begin here-->
+  	  <div class="grid">
+  		<div class="chatbox">
+  		 <div class ="row">
+  			<div class="col-xs-3 chatpicture">
+  				<img src="jess.JPG" class="img-responsive"/>
+  			</div>
+  			<div class= "col-xs-9 well chatarea">
+  				<div class="row chatheader">
+  		
+  					<div class="col-xs-5 chat"><p>@Jess</p></div>
+  					<div class="col-xs-7 chat"><p>17/08/17</p></div>
+
+  				</div>
+
+  				<div class= "row chattime">
+  					<div class="col-xs-12 chat"><p class="text">Hey Michie.. Been long i saw you. Hope you are great?</p></div>
+  				</div>
+  		    </div>
+  			</div>
+  		 </div>
+  		 <!--The grids 2-->
+  		<div class="chatbox">
+  		 <div class ="row">
+  			<div class="col-xs-3 chatpicture">
+  				<img src="jenny.JPG" class="img-responsive"/>
+  			</div>
+  			<div class= "col-xs-9 well chatarea">
+  				<div class="row chatheader">
+  		
+  					<div class="col-xs-5 chat"><p>@michie</p></div>
+  					<div class="col-xs-7 chat"><p>16/08/17</p></div>
+
+  				</div>
+
+  				<div class= "row chattime">
+  					<div class="col-xs-12 chat"><p class="text">Hey Jess... Been long i saw you. </p></div>
+  				</div>
+  		    </div>
+  			</div>
+  		 </div>
+
+  		  <!--The grids 3-->
+  		<div class="chatbox">
+  		 <div class ="row">
+  			<div class="col-xs-3 chatpicture">
+  				<img src="jenny.JPG" class="img-responsive"/>
+  			</div>
+  			<div class= "col-xs-9 well chatarea">
+  				<div class="row chatheader">
+  		
+  					<div class="col-xs-5 chat"><p>@Jess</p></div>
+  					<div class="col-xs-7 chat"><p>16/08/17</p></div>
+
+  				</div>
+
+  				<div class= "row chattime">
+  					<div class="col-xs-12 chat"><p class="text">Hey Jennifer... Been long i saw you. Hope you are great? </p></div>
+  				</div>
+  		    </div>
+  			</div>
+  		 </div>
+
+         <!--The grids 4-->
+
+  		<div class="chatbox">
+  		 <div class ="row">
+  			<div class="col-xs-3 chatpicture">
+  				<img src="jess.JPG" class="img-responsive"/>
+  			</div>
+  			<div class= "col-xs-9 well chatarea">
+  				<div class="row chatheader">
+  		
+  					<div class="col-xs-5 chat"><p>@neo</p></div>
+  					<div class="col-xs-7 chat"><p>16/08/17</p></div>
+
+  				</div>
+
+  				<div class= "row chattime">
+  					<div class="col-xs-12 chat"><p class="text">Hey Neo... Been long i saw you. Hope you are great? </p></div>
+  				</div>
+  		    </div>
+  			</div>
+  		 </div>
+
+  		  <!--The grids 5-->
+  		<div class="chatbox">
+  		 <div class ="row">
+  			<div class="col-xs-3 chatpicture">
+  				<img src="jess.JPG" class="img-responsive"/>
+  			</div>
+  			<div class= "col-xs-9 well chatarea">
+  				<div class= "chattext"></div>
+  				<div class= "chattext"></div>
+  		    </div>
+  			</div>
+  		 </div>
+  	  </div>
+  	  <!--The grids end here-->
+  </div>
+  <div class="plus">
+  	<p ><span class="glyphicon glyphicon-plus-sign" id="button" style="font-size:60px;color:#0bb;"></span></p>
+  </div>
+  <div id="overlay">
+    <div class="othericons">
+      <span class="glyphicon glyphicon-remove-circle plus1" id="button2" style="font-size:60px;color:#0bb;"></span>
+       <span class="glyphicon glyphicon-earphone plus2" style="font-size:50px;color:#0bb;"></span>
+        <span class="glyphicon glyphicon-camera plus3" style="font-size:50px;color:#0bb;"></span>
+    </div>
+  </div>
+</body>
+</html>
